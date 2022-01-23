@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_16",
   "mixins": [
     "AvailableGoalsAccessor",
+    "JumpMixin",
     "LivingGoalAccessor"
   ],
   "injectors": {
