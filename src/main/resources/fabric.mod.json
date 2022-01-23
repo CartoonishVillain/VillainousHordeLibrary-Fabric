@@ -1,29 +1,27 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "cartoonishhorde",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Cartoonish Horde Library",
+  "description": "A library mod for Continuous Assault Events",
   "authors": [
-    "Me!"
+    "Cartoonish Villain"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.cartoonishvillain.cartoonishhorde.CartoonishHorde"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "cartoonishhorde.mixins.json"
   ],
 
   "depends": {
@@ -31,8 +29,5 @@
     "fabric": "*",
     "minecraft": "1.18.x",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
