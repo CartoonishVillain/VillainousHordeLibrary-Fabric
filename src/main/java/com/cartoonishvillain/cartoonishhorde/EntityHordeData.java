@@ -49,27 +49,7 @@ public class EntityHordeData<T extends PathfinderMob> {
     }
 
     public T createInstance(ServerLevel level) {
-        T instance = null;
-        try {
-            Constructor<T>[] constructors = (Constructor<T>[]) entityClass.getDeclaredConstructors();
-            Constructor<T> constructor = null;
-            for (Constructor<T> cstr : constructors) {
-                ArrayList<Parameter> parameters = new ArrayList<>(List.of(cstr.getParameters()));
-                if (parameters.size() == 2) {
-                    constructor = cstr;
-                    break;
-                }
-            }
-            if (constructor != null) {
-                constructor.setAccessible(true);
-                instance = constructor.newInstance(type, level);
-            }
-
-            return instance;
-
-        } catch (InstantiationException | IllegalAccessException | InvocationTargetException e) {
-            e.printStackTrace();
-        }
-        return null;
+        T instance = (T) type.create(level);
+        return instance;
     }
 }
