@@ -17,7 +17,10 @@ By contributing to this repository you agree to have your code under the license
 # Warning! This library is under testing at the moment. Things may be quite unstable. Check back later for a better experience!
 
 ## Step 1 - Installation
-Working on a proper installation method and example. An example exists in the 1.18-Example branch, but frankly one as a seperate mod would be better
+
+ Follow the instructions to use curse maven: https://cfa2.cursemaven.com/
+
+Project ID: 571315 File ID: (Grab from https://www.curseforge.com/minecraft/mc-mods/cartoonish-horde-library/files)
 
 ## Step 2 - Instantiation
 Instantiate the Horde object (Or make your own extension of it and instantiate that) in your
